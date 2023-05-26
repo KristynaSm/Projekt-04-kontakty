@@ -9,3 +9,41 @@ body {
 h1 {
 	text-align: center;
 }
+
+.popis {
+	font-size: 15px;
+}
+
+.osoba {
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius:8px;
+	box-shadow:0 2px 4px grey;
+}
+
+.foto img {
+	border-radius:50%;
+}
+
+@media screen and (min-width:540px) {
+	.tym {
+		display: flex;
+		flex-wrap: wrap;
+		gap:20px;
+	}
+
+	.osoba {
+		flex: 1 1 45%;
+	}
+}
+
+@media screen and (min-width:940px) {
+	.tym {
+		flex-wrap:nowrap;
+	}
+
+	.osoba {
+		flex: 1 1 20%;
+	}
+}
