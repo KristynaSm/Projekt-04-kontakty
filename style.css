@@ -30,20 +30,43 @@ h1 {
 	.tym {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 		gap:20px;
 	}
 
 	.osoba {
+		display:flex;
+		justify-content: end;
 		flex: 1 1 45%;
+	
+	}
+
+	.foto {
+		flex: 0 0 80px;
+		margin-right: 20px;
+	}
+
+	.foto img {
+		width:100%;
 	}
 }
 
-@media screen and (min-width:940px) {
+@media screen and (min-width:1000px) {
 	.tym {
-		flex-wrap:nowrap;
+		flex-wrap: nowrap;
 	}
 
 	.osoba {
 		flex: 1 1 20%;
+		display: block;
+		text-align: center;
+	}
+
+	.foto {
+		margin: 0;
+	}
+
+	.foto img {
+		width: auto;
 	}
 }
